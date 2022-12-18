@@ -20,7 +20,7 @@ def init(customer,action):
     driver = webdriver.Chrome(options=options)
 
     delay = 10
-    totp = TOTP("FGQCIRF6Y2IYCBAK") #CHANGE THIS
+    totp = TOTP("AUTHENTICATOR KEY") #CHANGE THIS
     driver.get("https://manage.barracudamsp.com/Login.aspx?ReturnUrl=%2f")
     driver.maximize_window()
     login(driver,delay,totp,action,customer)
